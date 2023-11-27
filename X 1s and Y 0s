@@ -1,0 +1,5 @@
+n=int(input())
+for i in range(n):
+    a,b=map(int,input().split())
+    m=1000000007
+    print((((1<<a)-1)<<b)%m)
