@@ -1,0 +1,16 @@
+class Solution:
+    # @param A : tuple of integers
+    # @return a list of integers
+    def repeatedNumber(self, A):
+        A=list(A)
+        A.sort()
+        n=len(A)
+        z=[]
+        for i in range(len(A)-1):
+            if A[i]^A[i+1]==0:
+                z.append(A[i])
+        c=(n*(n+1))//2
+        s=sum(set(A))
+        z.append(c-s)
+        return z
+        
