@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import math
+n=int(input())
+for i in range(n):
+    a,b=map(int,input().split())
+    m=1000000007
+    r=1
+    while(b):
+        if(b&1==1):
+            r=(r*a)%m
+        a=(a*a)%m
+        b=b>>1
+    print(r)
