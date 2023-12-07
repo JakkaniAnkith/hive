@@ -1,0 +1,12 @@
+a,b=map(int,input().split())
+m=[]
+ar=[]
+for i in range(a):
+    sm=list(map(int,input().split()))
+    m.append(sm)
+for i in range(b):
+    s=0
+    for j in range(a):
+        s+=m[j][i]
+    print(s)
+
